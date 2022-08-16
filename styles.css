@@ -22,7 +22,7 @@
 .nav-box{
     display: inline-block;
     margin:auto;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .nav-button{
     background-color: white;
@@ -34,6 +34,7 @@
     font-size: 0.9rem;
     color: #1c1d1f;
     padding: 0 10px;
+    /* min-width:5rem; */
 }
 .nav-button:hover {
     color: blueviolet;
@@ -84,6 +85,7 @@
     font-weight: 600;
     font-size: 1rem;
     height: 40px;
+    min-width: 5rem;
 }
 
 .nav-signup {
@@ -93,12 +95,14 @@
     font-weight: 600;
     font-size: 1rem;
     height: 40px;
+    min-width: 5rem;
 }
 
 .nav-choose-lang{
     border:solid black 1px;
     height: 40px;
     width: 40px;
+    min-width: 40px;
 }
 .search-text:focus{
     outline: none;
@@ -123,7 +127,7 @@
     padding: 0 10px;
 }
 
-@media screen and (min-width:600px){
+@media screen and (min-width:800px){
     .nav-box-menu{
         display: none;
     }
@@ -132,7 +136,17 @@
     }
     
 }
-@media screen and (max-width:600px){
+@media screen and (max-width: 1080px){
+    .nav-1080{
+        display:none;
+    }
+}
+@media screen and (max-width: 920px) {
+    .nav-920 {
+        display: none;
+    }
+}
+@media screen and (max-width:800px){
     .nav-logo {
         justify-self: center;
     }
@@ -143,6 +157,7 @@
         justify-self: flex-start;
     }
 }
+
 /*----------------------------*/
 /* CONTAINER 1 */
 /*----------------------------*/
@@ -177,7 +192,7 @@
     margin-right: 10%;
     width: 20%;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
     .container1 {
         flex-direction: column-reverse;
     }
