@@ -1,0 +1,58 @@
+{
+  "courses": [
+    {
+      "img": "./imgs/python-c1.jpg",
+      "description": "Learn Python: The Complete Python Programming Course",
+      "author": "Avinash Jain, The Codex",
+      "stars": 4,
+      "ratings-count": 1721,
+      "price": 679.99,
+      "oldPrice": 679.99
+    },
+    {
+      "img": "./imgs/python-c2.jpg",
+      "description": "Learning Python for Data Analysis and Visualization",
+      "author": "Jose Portille",
+      "stars": 5,
+      "ratings-count": 4037,
+      "price": 1499.99,
+      "oldPrice": 679.99
+    },
+    {
+      "img": "./imgs/python-c3.jpg",
+      "description": "Python for Beginners - Learn Programming from scratch",
+      "author": "Edwin Diaz, Coding Faculty Solutions",
+      "stars": 3,
+      "ratings-count": 1231,
+      "price": 679.99,
+      "oldPrice": 679.99
+    },
+    {
+      "img": "./imgs/python-c4.jpg",
+      "description": "Learn Python: Python for Beginners",
+      "author": "Abrar Hussain",
+      "stars": 4,
+      "ratings-count": 1439,
+      "price": 389.99,
+      "oldPrice": 679.99
+    },
+    {
+      "img": "./imgs/python-c5.jpg",
+      "description": "Python Beyond the Basics - Object-Oriented Programming",
+      "author": "Infinite Skills",
+      "stars": 4,
+      "ratings-count": 2570,
+      "price": 529.99,
+      "oldPrice": 679.99
+    },
+    {
+      "img": "./imgs/python-c6.jpg",
+      "description": "Python for Data Structures, Algorithms, and Interviews!",
+      "author": "Jose Portilla",
+      "stars": 4,
+      "ratings-count": 9471,
+      "price": 1299.99,
+      "oldPrice": 679.99
+    }
+  ]
+}
