@@ -1,58 +1,259 @@
 {
-  "courses": [
-    {
-      "img": "./imgs/python-c1.jpg",
-      "description": "Learn Python: The Complete Python Programming Course",
-      "author": "Avinash Jain, The Codex",
-      "stars": 4,
-      "ratings-count": 1721,
-      "price": 679.99,
-      "oldPrice": 679.99
-    },
-    {
-      "img": "./imgs/python-c2.jpg",
-      "description": "Learning Python for Data Analysis and Visualization",
-      "author": "Jose Portille",
-      "stars": 5,
-      "ratings-count": 4037,
-      "price": 1499.99,
-      "oldPrice": 679.99
-    },
-    {
-      "img": "./imgs/python-c3.jpg",
-      "description": "Python for Beginners - Learn Programming from scratch",
-      "author": "Edwin Diaz, Coding Faculty Solutions",
-      "stars": 3,
-      "ratings-count": 1231,
-      "price": 679.99,
-      "oldPrice": 679.99
-    },
-    {
-      "img": "./imgs/python-c4.jpg",
-      "description": "Learn Python: Python for Beginners",
-      "author": "Abrar Hussain",
-      "stars": 4,
-      "ratings-count": 1439,
-      "price": 389.99,
-      "oldPrice": 679.99
-    },
-    {
-      "img": "./imgs/python-c5.jpg",
-      "description": "Python Beyond the Basics - Object-Oriented Programming",
-      "author": "Infinite Skills",
-      "stars": 4,
-      "ratings-count": 2570,
-      "price": 529.99,
-      "oldPrice": 679.99
-    },
-    {
-      "img": "./imgs/python-c6.jpg",
-      "description": "Python for Data Structures, Algorithms, and Interviews!",
-      "author": "Jose Portilla",
-      "stars": 4,
-      "ratings-count": 9471,
-      "price": 1299.99,
-      "oldPrice": 679.99
-    }
-  ]
+  "pythonData": {
+    "head": "Expand your career opportunities with Python",
+    "paragraph": "Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to ...",
+    "topicname": "Python",
+    "courses": [
+      {
+        "img": "./imgs/python-c1.jpg",
+        "description": "Learn Python: The Complete Python Programming Course",
+        "author": "Avinash Jain, The Codex",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c2.jpg",
+        "description": "Learning Python for Data Analysis and Visualization",
+        "author": "Jose Portille",
+        "stars": 5,
+        "ratings_count": 4037,
+        "price": 1499.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c3.jpg",
+        "description": "Python for Beginners - Learn Programming from scratch",
+        "author": "Edwin Diaz, Coding Faculty Solutions",
+        "stars": 3,
+        "ratings_count": 1231,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c4.jpg",
+        "description": "Learn Python: Python for Beginners",
+        "author": "Abrar Hussain",
+        "stars": 4,
+        "ratings_count": 1439,
+        "price": 389.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c5.jpg",
+        "description": "Python Beyond the Basics - Object-Oriented Programming",
+        "author": "Infinite Skills",
+        "stars": 4,
+        "ratings_count": 2570,
+        "price": 529.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c6.jpg",
+        "description": "Python for Data Structures, Algorithms, and Interviews!",
+        "author": "Jose Portilla",
+        "stars": 4,
+        "ratings_count": 9471,
+        "price": 1299.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c1.jpg",
+        "description": "Learn Python: The Complete Python Programming Course",
+        "author": "Avinash Jain, The Codex",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c1.jpg",
+        "description": "Learn Python: The Complete Python Programming Course",
+        "author": "Avinash Jain, The Codex",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c1.jpg",
+        "description": "Learn Python: The Complete Python Programming Course",
+        "author": "Avinash Jain, The Codex",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/python-c1.jpg",
+        "description": "Learn Python: The Complete Python Programming Course",
+        "author": "Avinash Jain, The Codex",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      }
+    ]
+  },
+
+  "excelData": {
+    "head": "Analyze and visualize data with Excel",
+    "paragraph": "Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world experts will show you the basics like how to organize data into sheets, rows and columns, and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies use Excel to ...",
+    "topicname": "Excel",
+    "courses": [
+      {
+        "img": "./imgs/excel-c1.jpg",
+        "description": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
+        "author": "Infinite Skills",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/excel-c2.jpg",
+        "description": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+        "author": "Infinite Skills",
+        "stars": 5,
+        "ratings_count": 4037,
+        "price": 1499.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/excel-c3.jpg",
+        "description": "Microsoft Excel - From Beginner to Expert in 6 Hours",
+        "author": "Todd McLeod",
+        "stars": 3,
+        "ratings_count": 1231,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/excel-c5.jpg",
+        "description": "The Ultimate Microsoft Excel 2013 Training Bundle - 19 Hours",
+        "author": "Simon Sez IT",
+        "stars": 4,
+        "ratings_count": 9471,
+        "price": 1299.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/excel-c4.jpg",
+        "description": "Learn Microsoft Excel 2013 - Advanced",
+        "author": "Abrar Hussain",
+        "stars": 4,
+        "ratings_count": 1439,
+        "price": 389.99,
+        "oldPrice": 795.99
+      }
+    ]
+  },
+  "webData": {
+    "head": "Build websites and applications with Web Development",
+    "paragraph": "The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.",
+    "topicname": "Web Development",
+    "courses": [
+      {
+        "img": "./imgs/web-c1.jpg",
+        "description": "Become a Certified HTML, CSS, JavaScript Developer",
+        "author": "Tech Learning Network, Mark Lassoff",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/web-c2.jpg",
+        "description": "The Complete 2020 Fullstack Web Developer Course",
+        "author": "Kalob Taulien",
+        "stars": 5,
+        "ratings_count": 4037,
+        "price": 1499.99,
+        "oldPrice": 795.99
+      }
+    ]
+  },
+  "jsData": {
+    "head": "Grow your software development skills with JavaScript",
+    "paragraph": "JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build...",
+    "topicname": "JavaScript",
+    "courses": [
+      {
+        "img": "./imgs/js-c1.jpg",
+        "description": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/js-c2.jpg",
+        "description": "1 Hour JavaScript",
+        "author": "John Bura",
+        "stars": 5,
+        "ratings_count": 4037,
+        "price": 1499.99,
+        "oldPrice": 795.99
+      }
+    ]
+  },
+  "dataScienceData": {
+    "head": "Lead data-driven decisions with Data Science",
+    "paragraph": "Data science application is an in-demand skill in many industries worldwide — including finance, transportation, education, manufacturing, human resources, and banking. Explore data science courses with Python, statistics, machine learning, and more to grow your knowledge. Get data science training if you’re into research, statistics...",
+    "topicname": "Data Science",
+    "courses": [
+      {
+        "img": "./imgs/ds-c1.jpg",
+        "description": "Data Science A-Z™: Real-Life Data Science Exercises Included",
+        "author": "Kirill Eremenko, Ligency I Team, Ligency Team",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      },
+      {
+        "img": "./imgs/ds-c2.jpg",
+        "description": "Machine Learning, Data Science and Deep Learning with Python",
+        "author": "Sundog Education",
+        "stars": 5,
+        "ratings_count": 4037,
+        "price": 1499.99,
+        "oldPrice": 795.99
+      }
+    ]
+  },
+  "AWSData": {
+    "head": "Become an expert in cloud computing with AWS Certification",
+    "paragraph": "Prep for your AWS certification with an AWS course on Udemy. Learn the fundamentals of AWS such as working with a serverless platform, the various frameworks, security and more. With these courses, you’ll build the valuable skills you need to implement cloud initiatives — and open up new career opportunities...",
+    "topicname": "AWS Certification",
+    "courses": [
+      {
+        "img": "./imgs/aws-c1.jpg",
+        "description": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      }
+    ]
+  },
+  "drawingData": {
+    "head": "Expand your creative skillset with Drawing",
+    "paragraph": "Want to start drawing for fun or take your craft to the next level? Explore our online drawing classes and learn pencil drawing, figure drawing, cartoon drawing, character drawing for cartoons and anime, illustration, sketching, shading and more. Take an overview course on the fundamentals of drawing or zero...",
+    "topicname": "Drawing",
+    "courses": [
+      {
+        "img": "./imgs/drawing-c1.jpg",
+        "description": "Drawing and Sketching for Beginners",
+        "author": "Robin Slee",
+        "stars": 4,
+        "ratings_count": 1721,
+        "price": 679.99,
+        "oldPrice": 795.99
+      }
+    ]
+  }
 }

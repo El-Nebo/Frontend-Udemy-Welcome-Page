@@ -4,14 +4,17 @@
         <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/png" href="https://www.udemy.com/staticx/udemy/images/v8/favicon-32x32.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
         <nav>
-            <div class="nav">
+            <div class="navv-bar">
                 <div class="nav-box-menu"><img class="nav-list" src="./icons/Hamburger_icon.svg.png"></div>
                 <div class='nav-box-logo'>
                     <a target="_blank" href="https://www.udemy.com"><img class="nav-logo" alt="Udemy Logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"></a>
@@ -50,13 +53,13 @@
             <div class="container2-courses">
                 <div class="container2-tabs">
                     <ul>
-                        <button><li>Python</li></button>
-                        <button><li>Excel</li></button>
-                        <button><li>Web Development</li></button>
-                        <button><li>JavaScript</li></button>
-                        <button><li>Data Science</li></button>
-                        <button><li>AWS Certificati</li></button>
-                        <button><li>Drawing</button</li></button>
+                        <button id="pythonButton"       onClick="switchTap(event,'0')" class="active-tab"><li>Python</li></button>
+                        <button id="excelButton"        onClick="switchTap(event,'1')" ><li>Excel</li></button>
+                        <button id="webButton"          onClick="switchTap(event,'2')" ><li>Web Development</li></button>
+                        <button id="JSButton"           onClick="switchTap(event,'3')" ><li>JavaScript</li></button>
+                        <button id="dataScienceButton"  onClick="switchTap(event,'4')" ><li>Data Science</li></button>
+                        <button id="AWSButton"          onClick="switchTap(event,'5')" ><li>AWS Certificati</li></button>
+                        <button id="drawingButton"      onClick="switchTap(event,'6')" ><li>Drawing</li></button>
                     </ul>
                 </div>
                 <div class="container2-courses-box">
@@ -69,12 +72,67 @@
                     </div>
                     <div class="container2-courses-panal">
                         <!-- ------------------- 1 --> 
-                        
+                        <div class=" carousel slide" data-interval="false" id="carouselExampleControls">
+                            <div class="carousel-inner" data-bs-slide-to="4">
+                                
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
             </div>
         </section>
+        <section>
+            <div class="top-categories-container">
+                <br>
+                <h3>Top Categories</h3>
+                <div class="row top-categories-cards">
+                    <div class="col-lg-3 col-md-4 col-sm-12 category">
+                        <img class="img-fluid img-wrapper" src="./imgs/top-cats1.jpg" alt="design-category-image">
+                        <h5>Design</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 category">
+                        <img class="img-fluid img-wrapper" src="./imgs/top-cats2.jpg" alt="Development-category-image">
+                        <h5>Development</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 category">
+                        <img class="img-fluid img-wrapper" src="./imgs/top-cats3.jpg" alt="Marketing-category-image">
+                        <h5>Marketing</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 category">
+                        <img class="img-fluid img-wrapper" src="./imgs/top-cats4.jpg" alt="IT and Software-category-image">
+                        <h5>IT and Software</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 category">
+                        <img class="img-fluid img-wrapper" src="./imgs/top-cats5.jpg" alt="Personal Development-category-image">
+                        <h5>Personal Development</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 category">
+                        <img class="img-fluid img-wrapper" src="./imgs/top-cats6.jpg" alt="Business-category-image">
+                        <h5>Business</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 category">
+                        <img class="img-fluid img-wrapper" src="./imgs/top-cats7.jpg" alt="Photography-category-image">
+                        <h5>Photography</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 category">
+                        <img class="img-fluid img-wrapper" src="./imgs/top-cats8.jpg" alt="Music-category-image">
+                        <h5>Music</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
     </body>
 </html>

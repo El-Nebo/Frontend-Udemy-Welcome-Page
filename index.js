@@ -1,3 +1,34 @@
+const tabs = [
+    {
+        "id":"pythonButton",
+        "name":"pythonData"
+    },
+    {
+        "id":"excelButton",
+        "name":"excelData"
+    },
+    {
+        "id":"webButton",
+        "name":"webData"
+    },
+    {
+        "id":"JSButton",
+        "name":"jsData"
+    },
+    {
+        "id":"dataScienceButton",
+        "name":"dataScienceData"
+    },
+    {
+        "id":"AWSButton",
+        "name":"AWSData"
+    },
+    {
+        "id":"drawingButton",
+        "name":"drawingData"
+    }
+];
+/////////////////////
 function getStarsHTML(starsCount){
     let starsHTML = '';
     for(let i = 0; i < starsCount; i++){
@@ -8,11 +39,10 @@ function getStarsHTML(starsCount){
     }
     return starsHTML;
 }
-function drawCourse(course,index){
-    let coursesNode = document.querySelector('.container2-courses-panal');
-    console.log(coursesNode);
+function drawCourse(course){
     let courseDiv = document.createElement('div');
-    courseDiv.classList.add('course');
+    courseDiv.classList.add('card');
+    // courseDiv.setAttribute('data-bs-slide-to', '4');
     courseDiv.innerHTML = `
         <img class='course-img' width="240" height='135' alt="Python Course" src="${course.img}">
         <div class="course-description">
@@ -32,27 +62,80 @@ function drawCourse(course,index){
 
         </div>
     `;
-    coursesNode.appendChild(courseDiv);
+    return courseDiv
 }
-const fetchCourse = async () => {
-    const response = await fetch('http://localhost:3000/courses');
-    const courses = await response.json();
-    console.log(courses);
-    return courses;
-}
-fetchCourse().then(courses=>courses.forEach(drawCourse)).catch(err=>console.log(err));
-
+//////////////////////
 let form = document.querySelector('form');
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     let text = document.querySelector('.search-text').value;
-    console.log(text);
-    let courses = document.querySelectorAll('.course');
-    courses.forEach(course=>{
-        if(course.querySelector('.course-description').innerText.toLowerCase().includes(text.toLowerCase())){
-            course.style.display = 'block';
-        }else{
-            course.style.display = 'none';
+    updateCourses(text);
+})
+//////////////////////////////
+let fetchData = async (data) => {
+    // console.log('http://localhost:3000/'+data);
+    const response = await fetch('http://localhost:3000/'+data);
+    const responsedata = await response.json();
+    return responsedata;
+}
+/////////////////////////////
+function makeWrapper(data,active){
+    let item = document.createElement('div');
+    item.classList.add('carousel-item');
+    if(active){
+        item.classList.add('active');
+    }
+    let wrapper = document.createElement('div');
+    wrapper.classList.add('cards-wrapper');
+    item.appendChild(wrapper);
+    data.forEach(course=>{ 
+        wrapper.appendChild(course);
+    } )
+
+    return item;
+}
+let data;
+let updateCourses = async (searchText="") =>{
+    let container = document.querySelector('.container2-intro');
+    let header = container.querySelector('h2');
+    let paragraph = container.querySelector('p');
+    let span = container.querySelector('span');
+    header.innerText = data.head;
+    paragraph.innerText = data.paragraph;
+    span.innerText = "Explore " + data.topicname;
+    // console.log(data.courses);
+    let carouselInner = document.querySelector('.carousel-inner');
+    carouselInner.innerHTML = '';
+    let courses = [];
+    let active = true;
+    let validCourses = data.courses;
+    validCourses = validCourses.filter(course => course["description"].toLowerCase().includes(searchText.toLowerCase()));
+    console.log(validCourses);
+    let courses_in_screen = Math.floor(window.innerWidth/360);
+    validCourses.forEach((course,index)=>{
+        courses.push(drawCourse(course));
+        if((index+1)%courses_in_screen==0 && index != 0 || index == validCourses.length-1){
+            carouselInner.appendChild(makeWrapper(courses,active));
+            active = false
+            courses = [];
         }
     })
-})
+}
+let activateBtn = async (button) =>{
+    document.querySelectorAll(".container2-tabs button").forEach(btn=>{
+        if(btn.id === button){
+            btn.classList.add('active-tab');
+        }else{
+            btn.classList.remove('active-tab');
+        }
+    })
+}
+
+let switchTap = async (event, topic)=>{
+    event.preventDefault();
+    activateBtn(tabs[topic].id);
+    data = await fetchData(tabs[topic].name);
+    updateCourses();
+}
+
+document.getElementById("pythonButton").click();
