@@ -110,8 +110,8 @@ let updateCourses = async (searchText="") =>{
     let active = true;
     let validCourses = data.courses;
     validCourses = validCourses.filter(course => course["description"].toLowerCase().includes(searchText.toLowerCase()));
-    console.log(validCourses);
-    let courses_in_screen = Math.floor(window.innerWidth/360);
+    // console.log(validCourses);
+    let courses_in_screen = Math.floor(window.innerWidth/380);
     validCourses.forEach((course,index)=>{
         courses.push(drawCourse(course));
         if((index+1)%courses_in_screen==0 && index != 0 || index == validCourses.length-1){
